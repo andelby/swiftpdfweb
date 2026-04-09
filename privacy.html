@@ -9,18 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230078D4' stroke-width='2'%3E%3Cpath d='M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z'/%3E%3Cpath d='M14 2V8H20'/%3E%3C/svg%3E">
 </head>
 <body>
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
                 <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
-                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9 15H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M9 11H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
+                    <img src="images/logo.png" alt="SwiftPDF" class="logo-icon">
                     <span class="brand-text">SwiftPDF</span>
                 </a>
             </div>
@@ -28,7 +24,6 @@
                 <a href="index.html">Home</a>
                 <a href="index.html#features">Features</a>
                 <a href="index.html#download">Download</a>
-                <a href="changelog.html">Changelog</a>
             </div>
             <button class="nav-toggle" aria-label="Toggle navigation">
                 <span></span>
@@ -47,85 +42,27 @@
         </a>
 
         <h1>Privacy Policy</h1>
-        <p><strong>Last updated:</strong> January 2024</p>
+        <p><strong>Effective date:</strong> 08/10/2023</p>
 
-        <h2>Introduction</h2>
-        <p>SwiftPDF is a PDF viewer application for Windows. We take your privacy seriously. This Privacy Policy explains how SwiftPDF handles your data.</p>
+        <p>This page informs you of our policies regarding the collection, use and disclosure of Personal Information.</p>
 
-        <h2>Data Collection</h2>
-        <p>SwiftPDF processes all PDF files locally on your device. We do not:</p>
-        <ul>
-            <li>Upload your PDF files to any server</li>
-            <li>Send your documents to external services</li>
-            <li>Collect personal information from users</li>
-            <li>Track your viewing habits or document history</li>
-        </ul>
+        <p>SwiftPDF does not collect, not use and not send to third parties your Personal Information.</p>
 
-        <h2>Local Processing</h2>
-        <p>All PDF rendering, annotation, and editing happens entirely on your local machine. Your documents never leave your device during normal use.</p>
+        <p>SwiftPDF uses third party services from Microsoft. Microsoft may collect and monitor and analyze information.</p>
 
-        <h2>Office Document Conversion</h2>
-        <p>When opening Microsoft Office documents (Word, Excel, PowerPoint), SwiftPDF converts them locally using the Microsoft Office interop libraries. No data is transmitted externally during this process.</p>
+        <p>We reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically.</p>
 
-        <h2>Crash Reporting</h2>
-        <p>SwiftPDF may collect anonymous crash reports to help improve the application. These reports contain:</p>
-        <ul>
-            <li>Error messages and stack traces</li>
-            <li>Application version information</li>
-            <li>Basic system information (OS version, architecture)</li>
-        </ul>
-        <p>No personal documents, file contents, or personally identifiable information is included in crash reports.</p>
-
-        <h2>Third-Party Services</h2>
-        <p>SwiftPDF uses the following third-party components:</p>
-        <ul>
-            <li><strong>WebView2 Runtime</strong> - Microsoft's embedded web platform for PDF rendering</li>
-            <li><strong>PDF.js</strong> - Mozilla's JavaScript PDF library (runs locally in WebView2)</li>
-        </ul>
-        <p>These components are subject to their respective privacy policies.</p>
-
-        <h2>Data Storage</h2>
-        <p>SwiftPDF stores:</p>
-        <ul>
-            <li><strong>Application settings</strong> - Stored locally in your user profile</li>
-            <li><strong>Window positions</strong> - Remembered between sessions</li>
-            <li><strong>Recent files list</strong> - Stored locally and never synced</li>
-        </ul>
-
-        <h2>Permissions</h2>
-        <p>SwiftPDF requires the following Windows permissions:</p>
-        <ul>
-            <li><strong>File access</strong> - To open and save PDF files you choose</li>
-            <li><strong>Network access</strong> - Required by WebView2 runtime for local processing</li>
-        </ul>
-
-        <h2>Updates</h2>
-        <p>We may update this privacy policy from time to time. Any changes will be posted on this page. We encourage you to review this policy periodically.</p>
-
-        <h2>Contact</h2>
-        <p>If you have any questions about this Privacy Policy, please contact us through our GitHub repository.</p>
-
-        <h2>Your Rights</h2>
-        <p>Since all data is processed locally on your device:</p>
-        <ul>
-            <li>You retain full control over your documents</li>
-            <li>No data is stored on our servers</li>
-            <li>You can uninstall SwiftPDF at any time to remove all local data</li>
-        </ul>
+        <p>If you have any questions about this Privacy Policy, please contact us.</p>
     </main>
 
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <svg class="logo-icon" viewBox="0 0 24 24" fill="none">
-                    <path d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z" stroke="currentColor" stroke-width="2"/>
-                    <path d="M14 2V8H20" stroke="currentColor" stroke-width="2"/>
-                </svg>
+                <img src="images/logo.png" alt="SwiftPDF" class="logo-icon">
                 <span>SwiftPDF</span>
             </div>
             <div class="footer-links">
                 <a href="privacy.html">Privacy Policy</a>
-                <a href="changelog.html">Changelog</a>
             </div>
             <div class="footer-copyright">
                 <p>&copy; 2024 SwiftPDF. Built with Windows 11.</p>
