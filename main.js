@@ -1,10 +1,14 @@
 // SwiftPDF Website JavaScript
 
-// Lightbox functions
+// Lightbox state
+let currentImageIndex = 0;
+let galleryImages = [];
+
 function openLightbox(img) {
+    galleryImages = Array.from(document.querySelectorAll('.gallery-img'));
+    currentImageIndex = galleryImages.indexOf(img);
+    updateLightboxImage();
     const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    lightboxImg.src = img.src;
     lightbox.classList.add('active');
     document.body.style.overflow = 'hidden';
 }
@@ -15,9 +19,29 @@ function closeLightbox() {
     document.body.style.overflow = '';
 }
 
-// Close lightbox on Escape key
+function changeImage(direction) {
+    currentImageIndex += direction;
+    if (currentImageIndex < 0) currentImageIndex = galleryImages.length - 1;
+    if (currentImageIndex >= galleryImages.length) currentImageIndex = 0;
+    updateLightboxImage();
+}
+
+function updateLightboxImage() {
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCounter = document.getElementById('lightbox-counter');
+    if (galleryImages.length > 0) {
+        lightboxImg.src = galleryImages[currentImageIndex].src;
+        lightboxCounter.textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
+    }
+}
+
+// Close lightbox on Escape key or arrow keys
 document.addEventListener('keydown', (e) => {
+    const lightbox = document.getElementById('lightbox');
+    if (!lightbox.classList.contains('active')) return;
     if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') changeImage(-1);
+    if (e.key === 'ArrowRight') changeImage(1);
 });
 
 document.addEventListener('DOMContentLoaded', () => {
