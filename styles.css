@@ -476,6 +476,31 @@ body {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    transition: var(--transition);
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.gallery-img.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gallery-img:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: var(--shadow-md);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     gap: 16px;
 }
@@ -541,6 +566,54 @@ body {
 .download {
     padding: 120px 0;
     background: linear-gradient(180deg, transparent 0%, var(--background-secondary) 100%);
+}
+
+.download-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--surface);
+    border-radius: var(--radius-xl);
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-lg);
+}
+
+.download-content {
+    flex: 1;
+    text-align: center;
+}
+
+.download-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 24px;
+    border-radius: var(--radius-md);
+}
+
+.download-title {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+}
+
+.download-description {
+    color: var(--text-secondary);
+    margin-bottom: 32px;
+    line-height: 1.7;
+}
+
+.download-visual {
+    flex: 1;
+}
+
+.download-preview {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
 }
 
 .download-card {

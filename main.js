@@ -77,8 +77,8 @@ document.addEventListener('DOMContentLoaded', () => {
         animateOnScroll.observe(card);
     });
     
-    // Observe gallery items
-    document.querySelectorAll('.gallery-item').forEach((item, index) => {
+    // Observe gallery images
+    document.querySelectorAll('.gallery-img').forEach((item, index) => {
         item.style.transitionDelay = `${index * 0.1}s`;
         animateOnScroll.observe(item);
     });
