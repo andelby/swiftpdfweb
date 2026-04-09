@@ -175,16 +175,22 @@
                     <p class="section-subtitle">A glimpse of the SwiftPDF experience</p>
                 </div>
                 <div class="gallery-grid">
-                    <img src="images/download.png" alt="SwiftPDF" class="gallery-img">
-                    <img src="images/download-1.png" alt="SwiftPDF" class="gallery-img">
-                    <img src="images/download-2.png" alt="SwiftPDF" class="gallery-img">
-                    <img src="images/download-3.png" alt="SwiftPDF" class="gallery-img">
-                    <img src="images/download-4.png" alt="SwiftPDF" class="gallery-img">
-                    <img src="images/download-5.png" alt="SwiftPDF" class="gallery-img">
-                    <img src="images/download-6.png" alt="SwiftPDF" class="gallery-img">
+                    <img src="images/download.png" alt="SwiftPDF" class="gallery-img" onclick="openLightbox(this)">
+                    <img src="images/download-1.png" alt="SwiftPDF" class="gallery-img" onclick="openLightbox(this)">
+                    <img src="images/download-2.png" alt="SwiftPDF" class="gallery-img" onclick="openLightbox(this)">
+                    <img src="images/download-3.png" alt="SwiftPDF" class="gallery-img" onclick="openLightbox(this)">
+                    <img src="images/download-4.png" alt="SwiftPDF" class="gallery-img" onclick="openLightbox(this)">
+                    <img src="images/download-5.png" alt="SwiftPDF" class="gallery-img" onclick="openLightbox(this)">
+                    <img src="images/download-6.png" alt="SwiftPDF" class="gallery-img" onclick="openLightbox(this)">
                 </div>
             </div>
         </section>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-img" id="lightbox-img">
+        </div>
 
         <!-- Download Section -->
         <section id="download" class="download">
@@ -217,9 +223,10 @@
             </div>
             <div class="footer-links">
                 <a href="privacy.html">Privacy Policy</a>
+                <a href="mailto:swiftpdfreader@gmail.com">Contact</a>
             </div>
             <div class="footer-copyright">
-                <p>&copy; 2024 SwiftPDF. Built with Windows 11.</p>
+                <p>&copy; 2026 SwiftPDF. Built with Windows 11.</p>
             </div>
         </div>
     </footer>
