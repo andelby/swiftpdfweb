@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230078D4' stroke-width='2'%3E%3Cpath d='M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z'/%3E%3Cpath d='M14 2V8H20'/%3E%3C/svg%3E">
+    <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
     <header class="header">
@@ -225,13 +225,13 @@
             <div class="section-container">
                 <div class="download-card">
                     <div class="download-content">
-                        <div class="download-badge">
+                        <a href="https://apps.microsoft.com/store/detail/9N94PHWFFVNH?cid=DevShareMCLPCS" target="_blank" class="download-badge">
                             <svg viewBox="0 0 24 24" fill="none">
                                 <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                 <path d="M22 4L12 14.01L9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             Available Now
-                        </div>
+                        </a>
                         <h2 class="download-title">Download SwiftPDF</h2>
                         <p class="download-description">Get the latest version from the Microsoft Store. Free, fast, and always up to date.</p>
                         <a href="ms-windows-store://pdp/?productid=9N94PHWFFVNH" class="btn btn-store btn-large">
@@ -240,33 +240,18 @@
                             </svg>
                             Microsoft Store
                         </a>
-                        <div class="system-requirements">
-                            <h4>System Requirements</h4>
-                            <ul>
-                                <li>Windows 10 version 1809 or later</li>
-                                <li>WebView2 Runtime (included)</li>
-                                <li>ARM64, x64, or x86 architecture</li>
-                            </ul>
-                        </div>
                     </div>
                     <div class="download-visual">
-                        <div class="store-preview">
-                            <div class="store-icon">
-                                <img src="images/logo.png" alt="SwiftPDF">
-                            </div>
+                        <a href="https://apps.microsoft.com/store/detail/9N94PHWFFVNH?cid=DevShareMCLPCS" target="_blank" class="store-preview">
+                            <img src="images/download.png" alt="SwiftPDF" class="store-app-icon">
                             <div class="store-info">
                                 <span class="app-name">SwiftPDF</span>
-                                <span class="app-dev">AnomalyCo</span>
                                 <span class="app-category">Productivity</span>
                             </div>
-                            <div class="store-rating">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
-                            </div>
-                        </div>
+                            <svg class="microsoft-logo" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M11.5 2H11C10.4 2 10 2.4 10 3V11.5H2.5C1.9 11.5 1.5 11.9 1.5 12.5V13C1.5 13.6 1.9 14 2.5 14H10V22.5C10 23.1 10.4 23.5 11 23.5H12C12.6 23.5 13 23.1 13 22.5V14H20.5C21.1 14 21.5 13.6 21.5 13V12.5C21.5 11.9 21.1 11.5 20.5 11.5H13V3C13 2.4 12.6 2 12 2H11.5Z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
